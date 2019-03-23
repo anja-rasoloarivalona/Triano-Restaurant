@@ -1,0 +1,35 @@
+.btn {
+
+    &,
+    &:link,
+    &:visited {
+        border: none;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: 600; 
+        line-height: 4.5rem; 
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+
+    &__header {
+        text-transform: uppercase;
+       
+        &--book {
+            padding: 1.6rem 5rem;
+            background-color: $color-dark;
+            color: $color-white;
+        }
+
+        &--lang {
+            padding: 1.6rem 2.4rem;
+            background-color: $color-white;
+            color: $color-secondary-light;
+
+        }
+    }
+}

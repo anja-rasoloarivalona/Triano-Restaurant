@@ -1,32 +1,16 @@
 .container {
     display: grid;
-    grid-template-rows: 100vh min-content;
+    grid-template-rows: 38.5rem max-content max-content;
     grid-template-columns: 
-    [side-bar-start] 20rem [side-bar-end
-        menu-nav-start] 2rem [menu-nav-end
-        menu-start] repeat(3, [col-start] minmax(min-content, 1fr) [col-end]);
+    [left-side-blank-start] 2rem [left-side-blank-end
+        full-start] 2rem 
+        [center-start] repeat(4, [col-start] minmax(min-content, 1fr) [col-end])
+        [center-end] 2rem [full-end 
+    right-side-blank-start] 2rem [right-side-blank-end];
 }
 
-
-.sidebar {
-    grid-row: 1 / 2;
-    grid-column: side-bar-start / side-bar-end;
-    background-color: rgb(204, 187, 187);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    color: black;
-}
-
+ 
 .header {
     grid-row: 1 / 2;
-    grid-column: menu-nav-start / col-end 3;
-    background-color: red;
-
-    & h1 {
-        font-size: 5rem;
-        color: white;
-    }
+    grid-column: full-start / full-end;
 }

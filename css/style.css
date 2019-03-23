@@ -9,27 +9,56 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; }
+
+.btn, .btn:link, .btn:visited {
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 4.5rem; }
+
+.btn:focus {
+  outline: none; }
+
+.btn__header {
+  text-transform: uppercase; }
+  .btn__header--book {
+    padding: 1.6rem 5rem;
+    background-color: #20201e;
+    color: #ffffff; }
+  .btn__header--lang {
+    padding: 1.6rem 2.4rem;
+    background-color: #ffffff;
+    color: #CD790B; }
+
+.header {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+  justify-items: center;
+  background-image: url("../img/home.jpg");
+  background-size: cover;
+  background-position: center; }
+  .header__logo {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: 21rem;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 1rem 0.5rem rgba(8, 8, 8, 0.9);
+    transform: translateY(-1.7rem); }
+  .header__cta {
+    transform: translateY(-7.3px); }
 
 .container {
   display: grid;
-  grid-template-rows: 100vh min-content;
-  grid-template-columns: [side-bar-start] 20rem [side-bar-end menu-nav-start] 2rem [menu-nav-end menu-start] repeat(3, [col-start] minmax(min-content, 1fr) [col-end]); }
-
-.sidebar {
-  grid-row: 1 / 2;
-  grid-column: side-bar-start / side-bar-end;
-  background-color: #ccbbbb;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  color: black; }
+  grid-template-rows: 38.5rem max-content max-content;
+  grid-template-columns: [left-side-blank-start] 2rem [left-side-blank-end full-start] 2rem [center-start] repeat(4, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 2rem [full-end right-side-blank-start] 2rem [right-side-blank-end]; }
 
 .header {
   grid-row: 1 / 2;
-  grid-column: menu-nav-start / col-end 3;
-  background-color: red; }
-  .header h1 {
-    font-size: 5rem;
-    color: white; }
+  grid-column: full-start / full-end; }
