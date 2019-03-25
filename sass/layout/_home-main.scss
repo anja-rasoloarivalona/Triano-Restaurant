@@ -1,0 +1,90 @@
+.home__main {
+
+    display: flex;
+    flex-direction: column;
+    //display: grid;
+    //grid-template-columns: repeat(2, 1fr);
+    //grid-auto-rows: max-content;
+    
+    
+
+
+    &__intro {
+        //grid-row: 1 / 2;
+        //grid-column: 1 / -1;
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+
+        & > * {
+            font-size: 1.7rem;
+            font-weight: 400;
+            line-height: 2rem;
+            color: $default-font-color;
+            font-family:  Times, serif;
+
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+
+    &__chef {
+        //grid-column: 1 / -1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+
+
+        & > * {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__img {
+            width: 40rem;
+            object-fit: cover;
+        }
+
+        &__text {
+            padding: 0 2rem;
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+
+
+            & div:not(:last-child) {
+                font-size: 3rem;
+                font-weight: 400;
+                line-height: 1.3;
+                color: $color-secondary-light;
+                text-transform: uppercase;
+                
+            }
+
+            & div:last-child {
+                margin-top: 1rem;
+                font-family: Times, serif;
+                font-size: 1.7rem;
+                font-weight: 400;
+                color : $default-font-color;
+                line-height: 1.5;
+            }
+            
+
+            &--reverse-position {
+                order: -1;
+            }
+        }
+
+        &--2 div div:not(:last-child){
+            align-self: flex-end;
+        }
+
+    }
+
+
+}
+

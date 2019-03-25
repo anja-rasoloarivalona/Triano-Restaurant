@@ -1,0 +1,22 @@
+.nav {
+
+    &__list {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6rem 0;
+    }
+
+    &__items {
+        font-size: 1.7rem;
+        font-weight: 800;
+        line-height: 2.1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-secondary-light;
+        
+    }
+}
+
