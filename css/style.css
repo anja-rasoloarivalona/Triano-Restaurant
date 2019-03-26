@@ -66,6 +66,15 @@ body {
     line-height: 1.3;
     color: #CD790B;
     text-transform: uppercase; }
+  .footer__social-media {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0; }
+  .footer__icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 1rem;
+    fill: #CD790B; }
   .footer__hours {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -91,9 +100,21 @@ body {
       grid-column: 2 / 3; }
     .footer__hours ul {
       list-style: none; }
+    .footer__hours__day li,
+    .footer__hours__hour li {
+      padding: .5rem 0;
+      font-size: 1.3rem;
+      color: #858585; }
+  .footer__adress div {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #20201e;
+    text-align: center; }
   .footer__adress iframe {
-    width: 30rem;
-    height: 22.5rem; }
+    width: 30;
+    height: 22.5rem;
+    margin-bottom: 1rem; }
 
 .header {
   display: grid;
