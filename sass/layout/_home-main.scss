@@ -9,11 +9,10 @@
         margin-bottom: 4rem;
 
         & > * {
-            font-size: 1.7rem;
-            font-weight: 400;
-            line-height: 2rem;
+            @include small-text-font;
             color: $default-font-color;
             font-family:  Times, serif;
+          
 
             &:not(:last-child) {
                 margin-bottom: 1.5rem;
@@ -51,21 +50,18 @@
 
 
             & div:not(:last-child) {
-                font-size: 3rem;
-                font-weight: 400;
-                line-height: 1.3;
+                @include x-big-text-font;
                 color: $color-secondary-light;
                 text-transform: uppercase;
                 
             }
 
             & div:last-child {
+                @include small-text-font;
                 margin-top: 1rem;
                 font-family: Times, serif;
-                font-size: 1.7rem;
-                font-weight: 400;
                 color : $default-font-color;
-                line-height: 1.5;
+                
             }
             
 
@@ -128,10 +124,8 @@
     }
 
     &__content {
+        @include small-text-font;
         font-family: Times, serif;
-        font-size: 1.7rem;
-        font-weight: 400;
-        line-height: 1.2;
         color: $default-font-color;
         padding: 0 1.5rem;
        
