@@ -6,7 +6,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 6rem 0;
+        padding: $gutter-vertical-sm 0;
+        margin: $gutter-vertical-md 0;
     }
 
     &__items {

@@ -5,8 +5,8 @@
 //////////////////////////////////////
 ////// HOME INTRODUCTION
     &__intro {
-        margin-top: 8rem;
-        margin-bottom: 4rem;
+        margin-top: $gutter-vertical-big;
+        margin-bottom: $gutter-vertical-md;
 
         & > * {
             @include small-text-font;
@@ -15,7 +15,7 @@
           
 
             &:not(:last-child) {
-                margin-bottom: 1.5rem;
+                margin-bottom: $gutter-vertical-sm;
             }
         }
     }
@@ -27,7 +27,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 8rem;
+        margin-bottom: $gutter-vertical-big;
       
 
 
@@ -58,7 +58,7 @@
 
             & div:last-child {
                 @include small-text-font;
-                margin-top: 1rem;
+                margin-top: $gutter-vertical-xs;
                 font-family: Times, serif;
                 color : $default-font-color;
                 
@@ -83,7 +83,7 @@
 .home__features {
     display: flex;
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: $gutter-vertical-md;
    
     
 
