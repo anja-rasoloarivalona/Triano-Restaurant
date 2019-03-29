@@ -49,13 +49,6 @@
             flex-direction: column;
 
 
-            & div:not(:last-child) {
-                @include x-big-text-font;
-                color: $color-secondary-light;
-                text-transform: uppercase;
-                
-            }
-
             & div:last-child {
                 @include small-text-font;
                 margin-top: $gutter-vertical-xs;
@@ -70,7 +63,7 @@
             }
         }
 
-        &--2 div div:not(:last-child){
+        &--2 div .heading-secondary{
             align-self: flex-end;
         }
 
@@ -107,10 +100,7 @@
 
     &__title {
         margin: 2rem 0;
-        text-transform: uppercase;
-        font-size: 2.3rem;
-        font-weight: 400;
-        color: $color-secondary-light;
+       
 
         &::before,
         &::after {
