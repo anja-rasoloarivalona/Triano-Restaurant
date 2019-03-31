@@ -163,6 +163,8 @@ body {
     background-image: url("../img/menu.jpg"); }
   .header--drinks {
     background-image: url("../img/drinks.jpg"); }
+  .header--rooftop {
+    background-image: url("../img/roof.jpg"); }
 
 .home__main {
   display: flex;
@@ -383,3 +385,8 @@ body {
       padding: .5rem 0; }
     .menu__item:not(:last-child) {
       margin-bottom: 1rem; }
+
+.rooftop-container {
+  display: grid;
+  grid-template-rows: 38.5rem max-content max-content max-content;
+  grid-template-columns: [left-side-blank-start] 2rem [left-side-blank-end full-start] 15rem [center-start] repeat(2, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] 15rem [full-end right-side-blank-start] 2rem [right-side-blank-end]; }
